@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.4.0-122-generic-x86_64-with-glibc2.27",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-10-03T20:43:35.495308",
+    "startedAt": "2022-10-03T20:43:35.150870",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-12GB",
+    "gpu_count": 1,
+    "cpu_count": 32,
+    "cuda": null,
+    "args": [
+        "--env_type",
+        "dmc",
+        "--env",
+        "walker-walk-v99",
+        "--seed",
+        "1462",
+        "--data_dir",
+        "/checkpoint/abachiro/redq_results"
+    ],
+    "state": "running",
+    "program": "/scratch/ssd001/home/abachiro/REDQ/experiments/train_redq_sac.py",
+    "codePath": "experiments/train_redq_sac.py",
+    "git": {
+        "remote": "https://github.com/watchernyu/REDQ.git",
+        "commit": "3f0df4136dd2d289b1e2732395bb0b27b2fe89a5"
+    },
+    "email": "romina.abachi@mail.utoronto.ca",
+    "root": "/scratch/ssd001/home/abachiro/REDQ",
+    "host": "gpu059",
+    "username": "abachiro",
+    "executable": "/h/abachiro/anaconda3/envs/viper/bin/python"
+}

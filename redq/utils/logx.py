@@ -258,6 +258,7 @@ class EpochLogger(Logger):
         """
         if val is not None:
             super().log_tabular(key,val)
+            return val
         else:
             v = self.epoch_dict[key]
             vals = np.concatenate(v) if isinstance(v[0], np.ndarray) and len(v[0].shape)>0 else v
@@ -268,7 +269,9 @@ class EpochLogger(Logger):
             if with_min_and_max:
                 super().log_tabular('Max'+key, stats[3])
                 super().log_tabular('Min'+key, stats[2])
+            return v[-1]
         self.epoch_dict[key] = []
+        
 
     def get_stats(self, key):
         """

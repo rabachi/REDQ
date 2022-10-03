@@ -55,7 +55,8 @@ class REDQSACAgent(object):
             if target_entropy == 'auto':
                 self.target_entropy = - act_dim
             if target_entropy == 'mbpo':
-                self.target_entropy = mbpo_target_entropy_dict[env_name]
+                # print(mbpo_target_entropy_dict)
+                self.target_entropy = -3 #mbpo_target_entropy_dict[env_name]
             self.log_alpha = torch.zeros(1, requires_grad=True, device=device)
             self.alpha_optim = optim.Adam([self.log_alpha], lr=lr)
             self.alpha = self.log_alpha.cpu().exp().item()

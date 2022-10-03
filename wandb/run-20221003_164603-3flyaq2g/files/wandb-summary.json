@@ -1,0 +1,1 @@
+{"Epoch": 4, "_timestamp": 1664830005.7220142, "TotalEnvInteracts": 4999, "EpRet": 38.26099233209583, "TestEpRet": 41.83947829867978, "Q1Vals": 0, "_runtime": 42.29644322395325, "_step": 4999, "_wandb": {"runtime": 89}}

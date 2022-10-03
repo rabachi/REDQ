@@ -1,0 +1,127 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.12
+    start_time: 1664829815.174182
+    t:
+      1:
+      - 1
+      - 53
+      - 55
+      2:
+      - 1
+      - 53
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.9.12
+      5: 0.13.3
+      8:
+      - 5
+alpha:
+  desc: null
+  value: 0.2
+auto_alpha:
+  desc: null
+  value: true
+batch_size:
+  desc: null
+  value: 256
+debug:
+  desc: null
+  value: false
+delay_update_steps:
+  desc: null
+  value: auto
+device:
+  desc: null
+  value: cuda:0
+env_name:
+  desc: null
+  value: walker-walk-v99
+env_type:
+  desc: null
+  value: dmc
+epochs:
+  desc: null
+  value: 1000000
+evaluate_bias:
+  desc: null
+  value: true
+gamma:
+  desc: null
+  value: 0.99
+hidden_sizes:
+  desc: null
+  value:
+  - 256
+  - 256
+logger:
+  desc: null
+  value: <redq.utils.logx.EpochLogger object at 0x7f2793fd63d0>
+logger_kwargs:
+  desc: null
+  value:
+    exp_name: redq_sac_walker-walk-v99
+    output_dir: /checkpoint/abachiro/redq_results/redq_sac_walker-walk-v99/redq_sac_walker-walk-v99_s1462
+lr:
+  desc: null
+  value: 0.0003
+max_ep_len:
+  desc: null
+  value: 1000
+n_evals_per_epoch:
+  desc: null
+  value: 1
+n_mc_cutoff:
+  desc: null
+  value: 350
+n_mc_eval:
+  desc: null
+  value: 1000
+num_Q:
+  desc: null
+  value: 10
+num_min:
+  desc: null
+  value: 2
+policy_update_delay:
+  desc: null
+  value: 20
+polyak:
+  desc: null
+  value: 0.995
+q_target_mode:
+  desc: null
+  value: min
+replay_size:
+  desc: null
+  value: 1000000
+reseed_each_epoch:
+  desc: null
+  value: true
+seed:
+  desc: null
+  value: 1462
+start_steps:
+  desc: null
+  value: 5000
+steps_per_epoch:
+  desc: null
+  value: 1000
+target_entropy:
+  desc: null
+  value: mbpo
+total_steps:
+  desc: null
+  value: 1000000001
+utd_ratio:
+  desc: null
+  value: 20
